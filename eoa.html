@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascendance Of The Empires</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #333; color: #fff; padding: 20px; text-align: center; }
+        nav ul { list-style-type: none; margin: 0; padding: 0; background-color: #444; }
+        nav ul li { display: inline; }
+        nav ul li a { text-decoration: none; color: white; padding: 14px 20px; display: inline-block; }
+        nav ul li a:hover, .tablinks:focus, .active { background-color: #555; }
+        .container, .tabcontent { padding: 20px; display: none; }
+        .active-content { display: block; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ascendance Of The Empires</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'Home')">Home</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'About')">About</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'Download')">Download</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'Support')">Support</a></li>
+    </ul>
+</nav>
+
+<div id="Home" class="tabcontent container active-content">
+    <h2>Welcome to Ascendance Of The Empires</h2>
+    <p>This game, a brainchild of passion and creativity, offers players a unique blend of strategy and narrative depth. Sire Spence, an indie developer, invites you into a world rich with lore, adventure, and endless possibilities.</p>
+    <p>Outside of game development, Sire is deeply engaged in storytelling, world-building, and creating compelling characters that resonate with players long after they've left the game. His dedication to crafting immersive experiences is evident in every aspect of Ascendance Of The Empires.</p>
+    <p>Join our community to discuss strategies, lore, and your epic tales of conquest and alliance. Together, we create more than just games; we create worlds.</p>
+</div>
+
+<div id="About" class="tabcontent container">
+    <h2>About Ascendance Of The Empires</h2>
+    <p>Created by Sire Spence, the main developer behind this ambitious project, Ascendance Of The Empires (AOTE) offers players a rich, expansive world. Starting as a simple idea nurtured through countless days and nights, including during school hours, AOTE has grown into an immersive universe awaiting exploration.</p>
+    <p>The lore of AOTE dives deep into the history of a fragmented world seeking unity. Players navigate through complex political landscapes, forging alliances, or declaring wars to expand their empires. The narrative is shaped by the decisions players make, weaving their stories into the tapestry of the game's universe.</p>
+    <p>Sire Spence invites you to embark on a journey of discovery, strategy, and intrigue in Ascendance Of The Empires.</p>
+</div>
+
+<div id="Download" class="tabcontent container">
+    <h2>Download Ascendance Of The Empires</h2>
+    <iframe frameborder="0" src="https://itch.io/embed/2573168?bg_color=193d3f&amp;fg_color=afbfd2&amp;link_color=9e2835&amp;border_color=4f6781" width="552" height="167"><a href="https://sireman4.itch.io/ascendance-of-the-empires">Ascendance Of The Empires by Sireman4</a></iframe>
+</div>
+
+<div id="Support" class="tabcontent container">
+    <h2>Support</h2>
+    <p>For support, queries, or to join the community discussions around Ascendance Of The Empires, visit our official game page on itch.io:</p>
+    <p><a href="https://sireman4.itch.io/ascendance-of-the-empires" target="_blank">Ascendance Of The Empires on itch.io</a></p>
+    <p>You can also reach out via email, though responses might be slower: <a href="mailto:sireman2014@gmail.com">sireman2014@gmail.com</a>.</p>
+</div>
+
+
+<footer>
+    <p>Ascendance Of The Empires © 2024</p>
+</footer>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementsByClassName('tablinks')[0].click(); // Click on the first tab to initialize the page with it open
+</script>
+
+</body>
+</html>
